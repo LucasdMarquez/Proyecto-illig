@@ -9,18 +9,21 @@
 h1, h3{
     font-family:"Poppins", sans-serif;
     font-weight: 200;
+    font-size: 5rem;
     font-style: bold;
     color:#E1E0E0 ;
 }
 h2{
     font-family:"Poppins", sans-serif;
-    font-weight: 200;
+    font-weight: 100;
+    font-size: 3.5rem;
     font-style: bold;
     color:#09D529 ;
 }
 p{
     font-family: "Poppins" sans-serif;
-    font-weight: 100;
+    font-weight: 50;
+    font-size: 2rem;
     color: #E1E0E0;
     font-style: bold;
 }
@@ -29,20 +32,44 @@ body{
    background-image: url(/assets/img/fondo.jpg);
 }
 header{
+    background-color: black;
     .navegacion{
         font-family: "Poppins" sans-serif;
         font-weight: 100;
+        font-size: 2rem;
         color: #E1E0E0;
         font-style: bold;
         list-style: none;
-        
-    }
+        }
+        .nav-link{
+            text-decoration: none;
+            color:#09D529;
+            
+        }
+        .nav-link:hover {
+                color:bisque;
+        }
 }
-main{
-  .listaComponentes{
-    font-family: "Poppins" sans-serif;
-    font-weight: 100;
-    color: #E1E0E0;
-    font-style: bold;
+main{/*corregir para que aparescan uno al lado del otro*/
+    .encabezado{
+        .listaComponentes{
+                font-family: "Poppins" sans-serif;
+                font-weight: 100;
+                font-size: 2rem;
+                color: #E1E0E0;
+                font-style: bold;
+                flex-direction: row;
+        .navComponentes{
+            .ulComponentes{
+                .itemComponentes{
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+            }
+         
+        }
+    }
 }   
+    }
+  
 }
