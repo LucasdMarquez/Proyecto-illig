@@ -31,28 +31,56 @@ p{
 body{
    background-image: url(/assets/img/fondo.jpg);
 }
-header{
-    background-color: black;
-    .navegacion{
-        font-family: "Poppins" sans-serif;
-        font-weight: 100;
-        font-size: 2rem;
-        color: #E1E0E0;
-        font-style: bold;
-        list-style: none;
-        }
-        .nav-link{
-            text-decoration: none;
-            color:#09D529;
+ header 
+    {background-color: black;
+    .sectionHeader{
+        .divHeader{
+            padding-bottom: 5px;
+            display: flex;
+            justify-content:space-between;
+            
+            .div-h3{
+                flex-direction: row;
+           
+            }
             
         }
+        .divLi{
+             .navegacion{
+               font-family: "Poppins" sans-serif;
+               font-weight: 100;
+               font-size: 2rem;
+               color: #E1E0E0;
+               font-style: bold;
+               list-style: none;
+               text-align: center;
+               flex-direction: row;
+               }
+        .nav-bar{
+            flex-direction: row;
+                .nav-item{
+                    flex-direction: column;
+                        } 
+        .nav-link{
+             text-decoration: none;
+             color:#09D529;
+               } 
         .nav-link:hover {
-                color:bisque;
+             color:bisque;
+                }
+                
+            }
+            }
         }
-}
+    }
+  
 main{/*corregir para que aparescan uno al lado del otro*/
     .encabezado{
-        .listaComponentes{
+        .encabezado-contenedor{
+            .h1Main{
+                text-align: center;
+            }
+            .listaComponentes{
                 font-family: "Poppins" sans-serif;
                 font-weight: 100;
                 font-size: 2rem;
@@ -70,6 +98,10 @@ main{/*corregir para que aparescan uno al lado del otro*/
         }
     }
 }   
+        
+        }
+
+     
     }
   
 }
